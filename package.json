@@ -16,7 +16,6 @@
     "coverage": "vitest run --coverage",
     "changeset": "changeset",
     "version": "changeset version",
-    "prerelease": "pnpm build",
     "release": "pnpm -r publish"
   },
   "lint-staged": {
