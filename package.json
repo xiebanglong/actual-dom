@@ -9,7 +9,6 @@
     "dev": "pnpm -r --parallel --filter='./packages/*' run dev",
     "playground": "pnpm -C playground dev",
     "build": "pnpm -r --filter='./packages/*' run build",
-    "b": "node -r sucrase/register scripts/build.ts",
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky install",
     "test": "vitest",
