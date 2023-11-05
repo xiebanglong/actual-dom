@@ -3,7 +3,7 @@ import type { TransformOptions } from '@babel/core';
 import type { Config } from 'babel-plugin-actual-dom';
 import { transformAsync } from '@babel/core';
 
-export default (config: Config): Plugin => ({
+export default (config: Partial<Config> = {}): Plugin => ({
   name: 'jsx',
   enforce: 'pre',
   /**
