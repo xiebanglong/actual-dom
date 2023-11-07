@@ -17,6 +17,10 @@
     bounce-in-down 1s calc(var(--delay) * 1s) forwards
 }
 
+.stopAnimation {
+  animation: none;
+}
+
 @keyframes move {
   from {
     transform: translateY(-96.3%);

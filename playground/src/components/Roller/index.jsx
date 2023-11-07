@@ -13,7 +13,10 @@ export default ({ delay = 1, style, onAnimationEnd }, [value = 's']) => {
     </ul>
   );
 
-  const setAnimate = value => ul.classList.toggle(css.animate, value);
+  const setAnimate = value => {
+    ul.classList.toggle(css.animate, value);
+    roller.classList.toggle(css.stopAnimation, !value);
+  };
   const createStyle = (val, delay) =>
     `--index: ${getCharArr(val || value).findIndex(char => char === value)}; --delay: ${delay};`;
 
